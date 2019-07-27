@@ -2439,3 +2439,74 @@ p.form-message.error {
 		max-width: 95%;
 	}
 }
+
+/*===========================
+		6.faq css 
+===========================*/
+.faq-row {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 0 0 10px;
+  box-shadow: 0 10px 20px 0 rgba(116,103,91,.06);
+  overflow: hidden;
+}
+
+.faq-row:hover .faq-title {
+    background-color: #1c3390;
+    color: #fff;
+}
+
+.faq-row .faq-title { 
+  padding: 20px 20px 20px 65px;
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+  color: #1c3390;
+  background: #e5e5e5;
+  transition: all 0.4s ease-out 0s;
+}
+.faq-row .faq-title span {
+	position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.faq-row .faq-title span::before,
+.faq-row .faq-title span::after {
+	content: '';
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	background-color: #1c3390;
+	transform: translate(-50%,-50%);
+	transition: all 0.2s ease-out 0s;
+}
+.faq-row .faq-title span::before {
+	width: 16px;
+    height: 2px;
+}
+.faq-row .faq-title span::after {
+	width: 2px;
+	height: 16px;
+}
+.faq-row:hover .faq-title span::before,
+.faq-row:hover .faq-title span::after { 
+	background-color: #fff;
+}
+.faq-row .faq-title[aria-expanded="true"] span::before {
+	transform: translate(-50%,-50%) rotate(180deg);
+}
+.faq-row .faq-title[aria-expanded="true"] span::after {
+	transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.faq-row .faq-body {
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.faq-row .faq-body p:last-child {
+  margin-bottom: 0;
+}
