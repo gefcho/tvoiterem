@@ -138,7 +138,7 @@ $(function() {
     $('.testimonial-active').slick({
         dots: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 8000,
         infinite: true,
         speed: 600,
         slidesToShow: 1,

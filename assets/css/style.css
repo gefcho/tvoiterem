@@ -45,6 +45,7 @@ img {
 	max-width: 100%;
 }
 
+:focus,
 a:focus,
 input:focus,
 textarea:focus,
@@ -202,6 +203,13 @@ p {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+
+.section-title--bg h5 {
+	color: #fff;
+}
+.section-title--bg h5::before {
+	background-color: #fff;
 }
 
 .section-title .title {
@@ -1407,6 +1415,8 @@ p {
 
 .testimonial-area {
 	position: relative;
+	height: 400px;
+	background-image: url('../images/testimonial/ts-bg.jpg');
 }
 
 .testimonial-area .testimonial-bg {
@@ -1414,7 +1424,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 68%;
+	height: 50%;
 }
 
 @media (max-width: 767px) {
@@ -1437,17 +1447,14 @@ p {
 }
 
 .single-testimonial p {
-	font-size: 29px;
+	font-size: 17px;
 	color: #fff;
-	font-weight: 500;
 	font-style: italic;
-	line-height: 48px;
 }
 
 @media (max-width: 767px) {
 	.single-testimonial p {
-			font-size: 18px;
-			line-height: 30px;
+		font-size: 16px;
 	}
 }
 
