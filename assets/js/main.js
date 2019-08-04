@@ -175,20 +175,6 @@ $(function() {
         }, 1500);
     });
 
-
-    //====== Slick product image
-
-    $('.product-image').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: '<span class="prev"><i class="lni-chevron-left"></i></span>',
-        nextArrow: '<span class="next"><i class="lni-chevron-right"></i></i></span>',
-        dots: false,
-    });
-
-
     //====== Nice Number
 
     $('input[type="number"]').niceNumber({
