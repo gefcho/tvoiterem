@@ -2521,3 +2521,25 @@ p.form-message.error {
 .faq-row .faq-body p:last-child {
   margin-bottom: 0;
 }
+
+
+.break-bg {
+    position: relative;
+    overflow: hidden;
+}
+.break-bg::before,
+.break-bg::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    transform: translateX(-50%) rotateX(82deg) rotate(45deg);
+    background: #fff;
+}
+.break-bg::before {
+    top: -350px;
+}
+.break-bg::after {
+    bottom: -350px;
+}
