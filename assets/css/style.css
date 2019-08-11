@@ -2552,3 +2552,59 @@ p.form-message.error {
 .break-bg::after {
     bottom: -350px;
 }
+
+.home-area {
+	margin-top: 125px;
+	background: url("../images/header.jpg") no-repeat;
+	background-size: cover;
+	background-position: 50% 25%;
+}
+.home-area .section-title {
+	display: table;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.home-area .section-title .section-content {
+	display: table-cell;
+    vertical-align: middle;
+}
+.home-area .section-title h1 {
+	font-size: 54px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.home-area .section-title h1 span {
+	color: #1c3390;
+    background: white;
+    padding: 10px 5px;
+}
+.home-area .section-title ul {
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.home-area .section-title ul li {
+	margin-bottom: 10px;
+}
+.home-area .section-title ul li span {
+	position: relative;
+}
+.home-area .section-title ul li span::before,
+.home-area .section-title ul li span::after {
+	position: absolute;
+    content: "";
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+.home-area .section-title ul li span::before {
+	right: -50px;
+}
+.home-area .section-title ul li span::after {
+	left: -50px;
+}
