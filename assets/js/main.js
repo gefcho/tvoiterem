@@ -89,50 +89,6 @@ $(function() {
     }
     mainSlider();
 
-    //=====  Slick Showcase active
-
-    $('.showcase-active').slick({
-        dots: false,
-        infinite: false,
-        //autoplay: true,
-        //autoplaySpeed: 6000,
-        speed: 1000,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: true,
-        prevArrow: '<span class="prev"><i class="lni-arrow-left"></i></span>',
-        nextArrow: '<span class="next"><i class="lni-arrow-right"></i></span>',
-        adaptiveHeight: true,
-        responsive: [{
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
-    });
-
-    //====== Gallery Popup
-    $('.single-showcase').each(function() {
-        $(this).magnificPopup({
-            delegate: '.img-link',
-            type: 'image',
-            gallery: {
-                enabled: true
-            },
-            closeOnContentClick: true,
-            removalDelay: 300,
-            mainClass: 'mfp-fade'
-        });
-    });
-
-
     //=====  Slick testimonial active
 
     $('.testimonial-active').slick({
@@ -203,7 +159,21 @@ $(function() {
 
     SetRatingStar();
 
+    //=====  Isotop
+    var $grid = $('.showcase-grid').isotope({
+        itemSelector: '.showcase-item__link',
+        layoutMode: 'masonry',
+        filter: '.one-level'
+    });
+    // filter items on button click
+    $('.filter-button-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
 
-
+    // ==== Light Gallery
+    $('#one-level, #many-level, #fly-lines, #fly-up, #double-vision, #apply').lightGallery({
+        thumbnail: true
+    }); 
 
 });
