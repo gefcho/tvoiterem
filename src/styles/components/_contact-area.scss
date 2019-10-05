@@ -1,0 +1,101 @@
+.contact-area {
+    .contact-title {
+        .title {
+            font-size: 60px;
+            color: #333;
+        }
+    }
+    .contact-box {
+        background-color: #fff;
+        padding: 10px 40px 40px;
+        box-shadow: 0px 0px 40px 0px rgba(156, 156, 156, 0.25);
+    }
+    .contact-info {
+        .info-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1c3390;
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+        .single-info {
+            position: relative;
+            .info-icon {
+                position: absolute;
+                left: 0;
+                top: 0;
+                i {
+                    font-size: 20px;
+                    color: #1c3390;
+                }
+            }
+            .info-content {
+                padding-left: 30px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    .contact-form {
+        .single-form {
+            margin-top: 30px;
+            textarea,
+            input {
+                width: 100%;
+                height: 55px;
+                border: 1px solid #ddd;
+                background-color: #f7f7ff;
+                padding: 0 20px;
+                &::placeholder {
+                    opacity: 1;
+                    color: #777;
+                }
+            }
+            textarea {
+                height: 155px;
+                padding-top: 15px;
+                resize: none;
+            }
+        }
+        .form-message {
+            &.success,
+            &.error {
+                font-size: 16px;
+                color: #333;
+                background: #ddd;
+                padding: 10px 15px;
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+            &.error {
+                color: #f00;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+	.contact-area {
+		padding-top: 70px;
+        .contact-title {
+            .title {
+                font-size: 35px;
+            }
+        }
+        .contact-box {
+            padding: 0 20px 20px;
+        }
+        .contact-info {
+            .single-info {
+                .info-content {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

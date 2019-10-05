@@ -1,0 +1,46 @@
+/* Main Config */
+@import "config/paths";
+@import "config/colors";
+
+/* Vendors */
+@import "vendor/bootstrap.min";
+@import "vendor/animate";
+@import "vendor/LineIcons";
+@import "vendor/jquery.nice-number.min";
+@import "vendor/lightgallery.min";
+@import "vendor/magnific-popup";
+@import "vendor/slick";
+
+/* Config */
+@import "config/general";
+@import "config/icons";
+
+/* Atoms */
+@import "atoms/typography";
+@import "atoms/animations";
+@import "atoms/preloader";
+@import "atoms/buttons";
+@import "atoms/back-to-top";
+@import "atoms/break-bg";
+
+/* Helpers */
+@import "helpers/margins";
+@import "helpers/paddings";
+@import "helpers/colors";
+@import "helpers/bg-colors";
+@import "helpers/data-overlay";
+@import "helpers/utils";
+
+/* Components */
+@import "components/header";
+@import "components/home-area";
+@import "components/section-title";
+@import "components/discount-product";
+@import "components/product-area";
+@import "components/services-area";
+@import "components/showcase-area";
+@import "components/workorder-area";
+@import "components/faq-area";
+@import "components/testimonial-area";
+@import "components/contact-area";
+@import "components/footer";

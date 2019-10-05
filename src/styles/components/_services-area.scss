@@ -1,0 +1,31 @@
+.services-area {
+    background-color: #e5e5e5;
+    .service-item {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .service-icon {
+            font-size: 50px;
+            margin: 0 15px;
+            color: #1c3390;
+        }
+        .service-text {
+            p {
+                font-size: 15px;
+                font-weight: 600;
+                color: #333;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+	.services-area {
+		padding-top: 75px;
+		padding-bottom: 80px;
+	}
+}

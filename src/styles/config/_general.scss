@@ -1,0 +1,51 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #777;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+:focus,
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+i,
+span,
+a {
+	display: inline-block;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #777;
+	margin: 0;
+}

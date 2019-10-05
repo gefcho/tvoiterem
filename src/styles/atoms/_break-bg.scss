@@ -1,0 +1,20 @@
+.break-bg {
+	position: relative;
+    overflow: hidden;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 700px;
+        height: 700px;
+        background-color: #fff;
+        transform: translateX(-50%) rotateX(82deg) rotate(45deg);
+    }
+    &::before {
+        top: -350px;
+    }
+    &::after {
+        bottom: -350px;
+    }
+}

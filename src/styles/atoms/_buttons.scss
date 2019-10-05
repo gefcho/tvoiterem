@@ -1,0 +1,19 @@
+/* Buttons Atom Styles */
+.btn {
+	color: #fff;
+	background-color: #1c3390;
+	border: 1px solid #1c3390;
+	border-radius: 0;
+	margin-bottom: 4px;
+	transition: all 0.4s ease-out 0s;
+	&:focus {
+		box-shadow: none;
+	}
+	&:hover {
+		color: #1c3390;
+		background-color: transparent;
+	}
+	&.btn--main {
+		padding: 12px 35px;
+	}
+}

@@ -1,0 +1,75 @@
+.faq-area {
+    .faq-row {
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        margin: 0 0 10px;
+        box-shadow: 0 10px 20px 0 rgba(116, 103, 91, .06);
+        overflow: hidden;
+        &:hover {
+            .faq-title {
+                color: #fff;
+                background-color: #1c3390;
+                span {
+                    &::before,
+                    &::after {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .faq-title {
+            position: relative;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1c3390;
+            background-color: #e5e5e5;
+            padding: 20px 20px 20px 65px;
+            margin: 0;
+            transition: all 0.4s ease-out 0s;
+            cursor: pointer;
+            span {
+                position: absolute;
+                left: 35px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    background-color: #1c3390;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.2s ease-out 0s;
+                }
+                &::before {
+                    width: 16px;
+                    height: 2px;
+                }
+                &::after {
+                    width: 2px;
+                    height: 16px;
+                }
+            }
+            [aria-expanded="true"] {
+                span {
+                    &::before {
+                        transform: translate(-50%, -50%) rotate(180deg);
+                    }
+                    &::after {
+                        transform: translate(-50%, -50%) rotate(90deg);
+                    }
+                }
+            }
+        }
+        .faq-body {
+            padding: 20px;
+            border-top: 1px solid #e5e5e5;
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.section-title {
+    h5 {
+        position: relative;
+        font-weight: 500;
+        font-size: 22px;
+        color: #1c3390;
+        padding-left: 110px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100px;
+            height: 1px;
+            background-color: #1c3390;
+            transform: translateY(-50%);
+        }
+    }
+    &.section-title--bg {
+        h5 {
+            color: #fff;
+            &::before {
+                background-color: #fff;
+            }
+        }
+    }
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 991px) {
+	.section-title {
+        .title {
+            font-size: 26px;
+        }
+    }
+}

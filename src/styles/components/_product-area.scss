@@ -1,0 +1,81 @@
+.product-area {
+    .collection-menu {
+        .collection-tilte {
+            font-size: 24px;
+            font-weight: 500;
+            color: #1c3390;
+            background-color: #e5e5e5;
+            padding: 30px 20px;
+        }
+        .nav {
+            a {
+                position: relative;
+                color: #777;
+                text-align: initial;
+                padding: 10px;
+                transition: all 0.4s ease-out 0s;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 80px;
+                    height: 2px;
+                    background-color: #e5e5e5;
+                    transition: all 0.4s ease-out 0s;
+                }
+                &:hover,
+                &.active {
+                    &::before {
+                        width: 120px;
+                        background-color: #1c3390;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            display: block;
+            max-width: 100%;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            overflow: hidden;
+            &.active {
+                height: auto;
+                visibility: visible;
+                opacity: 1;
+                overflow: visible;
+            }
+            .tab-image {
+                position: relative;
+                height: 400px;
+                margin-bottom: 20px;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+	.product-area {
+		padding-top: 50px;
+        padding-bottom: 80px;
+        .collection-menu {
+            .collection-tilte {
+                font-size: 20px;
+                padding: 15px 10px;
+            }
+        }
+	}
+}

@@ -133,9 +133,9 @@ $(function() {
 
     //====== Nice Number
 
-    $('input[type="number"]').niceNumber({
+    // $('input[type="number"]').niceNumber({
 
-    });
+    // });
 
 
     //=====  Rating selection
